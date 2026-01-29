@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Session, Reading, CreateSessionRequest, CreateReadingRequest } from '@/lib/types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-
+// const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = "https://smart-incubator-monitoring-platform.onrender.com"
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
   headers: {
